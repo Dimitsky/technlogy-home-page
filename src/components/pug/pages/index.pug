@@ -1,0 +1,34 @@
+extends ../templates/layout.pug
+
+block variables
+    - 
+        let title = 'Technlogy Home Page';
+        let navList = [
+            {
+                href: '#',
+                innerHTML: 'Home',
+            },
+            {
+                href: '#',
+                innerHTML: 'About Us',
+            },
+            {
+                href: '#',
+                innerHTML: 'Service',
+            },
+            {
+                href: '#',
+                innerHTML: 'Products',
+            },
+            {
+                href: '#',
+                innerHTML: 'People',
+            },
+            {
+                href: '#',
+                innerHTML: 'Contact',
+            },
+        ];
+
+block header
+    include ../../sections/header/header.pug
