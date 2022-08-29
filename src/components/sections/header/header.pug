@@ -3,8 +3,8 @@ header(class="header")
         div(class="row header__row")
             div(class="col-1")
                 img(class="header__img" alt="изображение логотипа" src="assets/img/logo.webp")
-            nav(class="col-6 header__nav nav-header")
-                ul(class="list-reset nav-header__list")
+            nav(class="col-6 nav header__nav nav-header")
+                ul(class="list-reset nav__list list-nav nav-header__list")
                     each item in navList
-                        li(class="nav-header__item")
-                            a(class="link nav-header__link" href=item.href)= item.innerHTML 
+                        li(class="list-nav__item nav-header__item")
+                            a(class="list-nav__link link nav-header__link" href=item.href)= item.innerHTML 

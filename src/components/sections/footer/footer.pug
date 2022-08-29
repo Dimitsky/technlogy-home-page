@@ -1,0 +1,36 @@
+footer(class="footer")
+    div(class="container-fluid footer__container")
+        div(Class="row")
+            div(class="col-4") SUPPORT
+            span(class="tag footer__tag") get in touch
+        form(class="row footer__form form-footer")
+            div(class="col-12")
+                input(class="input form-footer__name" name="user-name" id="user-name" type="text" placeholder="Name")
+                input(class="input form-footer__email" name="user-email" id="user-email" type="email" placeholder="Email")
+                input(class="input form-footer__phone" name="user-phone" id="user-phone" type="tel" placeholder="Phone")
+                textarea(class="input form-footer__message" name="user-message" id="user-message")
+                button(class="button button--form form-footer__send" type="send") SEND
+        div(class="row footer__contacts contacts-footer")
+             ul(class="list-reset col-12 contacts-footer__list list-contacts-footer")
+                li(class="list-contacts-footer__item")
+                    img(class="list-contacts-footer__icon" src="assets/img/footer/i1.webp" alt="Иконка")
+                    div(class="list-contacts-footer__group")
+                        a(class="list-contacts-footer__phone" href="tel:1-677-124-44225") 1-677-124-44225
+                        a(class="list-contacts-footer__phone" href="tel:1-677-124-44225") 1-677-124-44225
+                        a(class="list-contacts-footer__phone" href="tel:1-677-124-44225") 1-677-124-44225
+                li(class="list-contacts-footer__item")
+                    img(class="list-contacts-footer__icon" src="assets/img/footer/i2.webp" alt="Иконка")
+                    div(class="list-contacts-footer__group")
+                        a(class="list-contacts-footer__phone" href="mailto:office@bridge.com") office@bridge.com
+                        a(class="list-contacts-footer__phone" href="mailto:service@bridge.com") service@bridge.com
+                        a(class="list-contacts-footer__phone" href="mailto:shop@bridge.com") shop@bridge.com
+                li(class="list-contacts-footer__item")
+                    img(class="list-contacts-footer__icon" src="assets/img/footer/i3.webp" alt="Иконка")
+                    address(class="list-contacts-footer__group")
+                        span(class="ist-contacts-footer__address") New York Bridgestone side 130 NY
+        div(class="row")
+            nav(class="col-7 nav footer__nav nav-footer")
+                ul(class="list-reset nav__list list-nav nav-footer__list")
+                    each item in navList
+                        li(class="list-nav__item nav-footer__item")
+                            a(class="list-nav__link link nav-footer__link" href=item.href)= item.innerHTML 
