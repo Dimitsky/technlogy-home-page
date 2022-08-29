@@ -1,0 +1,46 @@
+section(class="about")
+    div(class="container-fluid about__container")
+        ul(class="row about__wrap about__list list-about")
+            each item in aboutList
+                li(class="col-3 list-about__item")
+                    div(class="card list-about__body body-list-about")
+                        img(class="body-list-about__icon" alt=`${item.iconAlt}` src=`assets/img/about/${item.iconName}`)
+                    span(class="body-list-about__title")= item.title
+        div(class="row about__middle middle-about")
+            div(class="col-6 middle-about__col")
+                h2(class="heading middle-about__heading") ABOUT US
+                span(class="tag middle-about__tag") TECHNOLOGY
+                p(class="paragraph middle-about__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
+                p(class="paragraph middle-about__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
+                button(class="button middle-about__more" type="button") LEARN MORE
+        div(class="row about__bottom bottom-about")
+            div(class="col-6 bottom-about__col")
+                h3(class="heading bottom-about__heading") We work with big and small companies
+                p(class="paragraph bottom-about__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
+                p(class="paragraph bottom-about__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
+            div(class="col-6")
+                ul(class="graph")
+                    li(class="graph__item")
+                        div(class="graph__body body-graph")
+                            span(class="body-graph__title") APP DEVELOPMENT
+                            span(class="body-graph__percent") 92%
+                        div(class="graph__scale scale-graph")
+                            div(class="scale-graph__item")
+                    li(class="graph__item")
+                        div(class="graph__body body-graph")
+                            span(class="body-graph__title") User Interface
+                            span(class="body-graph__percent") 88%
+                        div(class="graph__scale scale-graph")
+                            div(class="scale-graph__item")
+                    li(class="graph__item")
+                        div(class="graph__body body-graph")
+                            span(class="body-graph__title") User Experiences
+                            span(class="body-graph__percent") 95%
+                        div(class="graph__scale scale-graph")
+                            div(class="scale-graph__item")
+                    li(class="graph__item")
+                        div(class="graph__body body-graph")
+                            span(class="body-graph__title") Information Architecture
+                            span(class="body-graph__percent") 50%
+                        div(class="graph__scale scale-graph")
+                            div(class="scale-graph__item")
