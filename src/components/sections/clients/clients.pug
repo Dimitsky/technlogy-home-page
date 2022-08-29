@@ -1,0 +1,15 @@
+section(class="clients")
+    dic(class="container-fluid clients__container")
+        div(class="row")
+            ul(class="col-12 clients__list list-clients")
+                each item in clientsList
+                    li(class="list-clients__item")
+                        img(class="list-clients__img" src=`assets/img/clients/${item.src}` alt=item.alt)
+        div(class="row")
+            ul(class="list-reset col-12 info__list list-info")
+                each item in infoList
+                    li(class="list-info__item")
+                        div(class="list-info__body body-list-info")
+                            img(class="body-list-info__img" src=`assets/img/clients/${item.src}`, alt=item.alt)
+                            h4(class="body-list-info__heading")= item.heading
+                            p(class="paragraph paragraph--compact")= item.paragraph
