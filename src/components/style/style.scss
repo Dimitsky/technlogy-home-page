@@ -1,18 +1,31 @@
-// @import '../fonts/fonts.scss';
+@import '../fonts/fonts.scss';
 
-// :root {
-//     box-sizing: border-box;
-// }
+:root {
+    box-sizing: border-box;
+}
 
-// *, 
-// ::after, 
-// ::before {
-//     box-sizing: inherit;
-// }
+*, 
+::after, 
+::before {
+    box-sizing: inherit;
+}
 
-// .list-reset {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     padding-left: 0;
-//     list-style: none;
-// }
+.list-reset {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.my-container {
+    max-width: 1190px;
+}
+
+// ui
+@import '../ui/paragraph/paragraph.scss';
+@import '../ui/tag/tag.scss';
+@import '../ui/nav/nav.scss';
+@import '../ui/title/title.scss';
+
+// sections
+@import '../sections/header/header.scss';

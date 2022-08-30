@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    align-items: center;
+
+    &--right {
+        justify-content: flex-end;
+    }
+    
+    &__list {
+        display: flex;
+        gap: 2.8125em;
+    }
+}
+
+.list-nav {
+    &__link {
+        color: #fff;
+        font-family: Abel, sans-serif;
+        font-size: 1.125em;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none;
+
+        &--active {
+            color: #076CF0;
+        }
+    }
+}

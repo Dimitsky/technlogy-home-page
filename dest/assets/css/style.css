@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Abel";
+  src: url("../fonts/Abel-Regular.woff2") format("woff2"), url("../fonts/Abel-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.my-container {
+  max-width: 1190px;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tag {
+  color: #868686;
+  font: 400 1.875em/1 Abel, sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav--right {
+  justify-content: flex-end;
+}
+.nav__list {
+  display: flex;
+  gap: 2.8125em;
+}
+
+.list-nav__link {
+  color: #fff;
+  font-family: Abel, sans-serif;
+  font-size: 1.125em;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+}
+.list-nav__link--active {
+  color: #076CF0;
+}
+
+.title {
+  padding-left: 2.6875em;
+  font-size: 16px;
+}
+.title__heading {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+  font: 500 3.75em/1.185 Rubik, sans-serif;
+}
+.title__heading::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.5375em;
+  width: 5px;
+  height: 90%;
+  background-color: #076CF0;
+  transform: translateY(-50%);
+}
+.title__tag {
+  color: #076CF0;
+  font: 400 1.875em/1.4 Abel, sans-serif;
+  text-transform: uppercase;
+}
+
+.header {
+  background: no-repeat center/auto 100% #060a0d url("../img/bg.jpg");
+}
+.header__container {
+  padding-top: 0.9375em;
+}
+.header__top {
+  justify-content: space-between;
+}
+.header__bottom {
+  padding-top: 165px;
+  padding-bottom: 189px;
+}
+.header__img {
+  height: 70px;
+}
+.header__title {
+  padding-left: 0;
+}
+
+.title-header__heading {
+  color: #fff;
+  font-size: 5em;
+}
+.title-header__heading::before {
+  content: none;
+}

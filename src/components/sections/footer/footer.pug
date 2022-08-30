@@ -33,4 +33,4 @@ footer(class="footer")
                 ul(class="list-reset nav__list list-nav nav-footer__list")
                     each item in navList
                         li(class="list-nav__item nav-footer__item")
-                            a(class="list-nav__link link nav-footer__link" href=item.href)= item.innerHTML 
+                            a(class=`list-nav__link link nav-footer__link ${item.active == true ? "link--active" : ""}` href=item.href)= item.innerHTML 

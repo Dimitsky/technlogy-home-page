@@ -7,26 +7,32 @@ block variables
             {
                 href: '#',
                 innerHTML: 'Home',
+                active: true, 
             },
             {
                 href: '#',
                 innerHTML: 'About Us',
+                active: false, 
             },
             {
                 href: '#',
-                innerHTML: 'Service',
+                innerHTML: 'Service', 
+                active: false, 
             },
             {
                 href: '#',
-                innerHTML: 'Products',
+                innerHTML: 'Products', 
+                active: false, 
             },
             {
                 href: '#',
-                innerHTML: 'People',
+                innerHTML: 'People', 
+                active: false, 
             },
             {
                 href: '#',
-                innerHTML: 'Contact',
+                innerHTML: 'Contact', 
+                active: false, 
             },
         ];
         let aboutList = [
@@ -93,7 +99,6 @@ block variables
 block header
     include ../../sections/header/header.pug
 block main
-    include ../../sections/hero/hero.pug
     include ../../sections/about/about.pug
     include ../../sections/experiences/experiences.pug
     include ../../sections/unique/unique.pug

@@ -1,0 +1,35 @@
+.header {
+    background: no-repeat center / auto 100% #060a0d url('../img/bg.jpg');
+
+    &__container {
+        padding-top: 0.9375em;
+    }
+
+    &__top {
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        padding-top: 165px;
+        padding-bottom: 189px;
+    }
+
+    &__img {
+        height: 70px;
+    }
+
+    &__title {
+        padding-left: 0;
+    }
+}
+
+.title-header {
+    &__heading {
+        color: #fff;
+        font-size: 5em;
+
+        &::before {
+            content: none;
+        }
+    }
+}

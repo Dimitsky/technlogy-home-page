@@ -1,0 +1,29 @@
+.title {
+    padding-left: 2.6875em;
+    font-size: 16px;
+
+    &__heading {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #000;
+        font: 500 3.75em/1.185 Rubik, sans-serif;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -0.5375em;
+            width: 5px;
+            height: 90%;
+            background-color: #076CF0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__tag {
+        color: #076CF0;
+        font: 400 1.875em/1.4 Abel, sans-serif;
+        text-transform: uppercase;
+    }
+}

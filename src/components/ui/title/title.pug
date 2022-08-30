@@ -1,0 +1,15 @@
+//- h - Текст в <h1>, <h2> и т.д. 
+//- t - текст в <span>
+//- mod - вспомогательный класс (необязательно)
+//- size - размер заголовка (<h1>, <h2> и т.д.)
+
+mixin title(h='', t='', mod='')
+    if (mod)
+        - var blockMod = ` ${mod}__title title-${mod}`;
+        - mod = 'title-' + mod;
+    div(class="title" + blockMod)
+        - let hMod = mod ? ` ${mod}__heading ${mod}__heading--2` : '';
+        h2(class="title__heading title__heading--2" + hMod)= h
+        if (t)
+            - let tMod = mod ? ' ' + mod : '';
+            span(class="title__tag" + tMod)= t
