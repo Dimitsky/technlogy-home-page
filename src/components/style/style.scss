@@ -10,6 +10,10 @@
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 .list-reset {
     margin-top: 0;
     margin-bottom: 0;
@@ -25,7 +29,11 @@
 @import '../ui/paragraph/paragraph.scss';
 @import '../ui/tag/tag.scss';
 @import '../ui/nav/nav.scss';
-@import '../ui/title/title.scss';
+@import '../ui/box/box.scss';
+@import '../ui/card/card.scss';
+@import '../ui/button/button.scss';
+@import '../ui/graph/graph.scss';
 
 // sections
 @import '../sections/header/header.scss';
+@import '../sections/about/about.scss';

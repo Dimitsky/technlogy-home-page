@@ -1,0 +1,15 @@
+.card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 168px;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 40px 5px #4091fb;
+
+    &__img {
+        height: 78px;
+    }
+}

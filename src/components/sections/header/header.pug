@@ -1,20 +1,19 @@
-include ../../ui/title/title.pug
+include ../../ui/box/box.pug
 
 header(class="header")
     div(class="container-fluid my-container header__container")
-        div(class="row header__top")
+        div(class="row header__top top-header")
             div(class="col-1")
-                img(class="header__img" alt="изображение логотипа" src="assets/img/logo.webp")
-            nav(class="col-6 nav nav--right header__nav nav-header")
-                ul(class="list-reset nav__list list-nav nav-header__list")
+                img(class="top-header__img" alt="изображение логотипа" src="assets/img/logo.webp")
+            nav(class="col-6 nav nav--right top-header__nav nav-top-header")
+                ul(class="list-reset nav__list list-nav nav-top-header__list")
                     each item in navList
-                        li(class="list-nav__item nav-header__item")
-                            a(class=`list-nav__link link nav-header__link ${item.active == true ? "link--active" : ""}` href=item.href)= item.innerHTML
-        div(class="row header__bottom")
+                        li(class="list-nav__item nav-top-header__item")
+                            a(class=`list-nav__link link nav-top-header__link ${item.active == true ? "link--active" : ""}` href=item.href)= item.innerHTML
+        div(class="row header__bottom bottom-header")
             div(class="col-6")
-                +title(
+                +box(
                     'INNOVATION THAT DRIVES EMOTION', 
                     'THE NEXT LEVEL',
-                    'header', 
-                    1
+                    'bottom-header'
                 )

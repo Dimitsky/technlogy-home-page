@@ -1,0 +1,12 @@
+mixin box(heading, tag, mod)
+    - let boxMod = ''; headingMod = '', tagMod = '';
+    if mod
+        - boxMod = ' ' + mod;
+        - headingMod = ' ' + mod + '__heading';
+        - tagMod = ' ' + mod + '__tag';
+    div(class="box" + boxMod)
+        h2(class="box__heading" + headingMod)= heading
+        if tag
+            span(class="box__tag" + tagMod)= tag
+        if block
+            block

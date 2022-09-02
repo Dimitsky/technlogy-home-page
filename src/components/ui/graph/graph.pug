@@ -1,0 +1,16 @@
+//- list = [{title, percent, bgcolor}, ...]
+
+mixin graph(list, mod)
+    - blockMod = mod ? ' ' + mod : '';
+    - titleMod = mod ? ' ' + mod + '__title' : '';
+    - percentMod = mod ? ' ' + mod + '__percent' : '';
+    - boxMod = mod ? ` ${mod}__box box-${mod}` : '';
+    - itemMod = mod ? ' ' + mod + '__item' : '';
+    - scaleMod = mod ? ` box-${mod}__scale` : '';
+    ul(class="graph" + blockMod)
+        each item in list
+            li(class="graph__item")
+                span(class="graph__title" + titleMod)= item.title
+                span(class="graph__percent" + percentMod)= item.percent + '%'
+                div(class="graph__box box-graph" + boxMod)
+                    div(class="box-graph__scale" + scaleMod style=`background-color: ${item.bgcolor}; width: ${item.percent}%`)

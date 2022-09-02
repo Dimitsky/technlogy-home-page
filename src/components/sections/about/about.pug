@@ -1,46 +1,26 @@
+include ../../ui/card/card.pug
+include ../../ui/box/box.pug
+include ../../ui/graph/graph.pug
+
 section(class="about")
-    div(class="container-fluid about__container")
+    div(class="container-fluid my-container about__container")
         ul(class="list-reset row about__wrap about__list list-about")
             each item in aboutList
                 li(class="col-3 list-about__item")
-                    div(class="card list-about__body body-list-about")
-                        img(class="body-list-about__icon" alt=`${item.iconAlt}` src=`assets/img/about/${item.iconName}`)
-                    span(class="body-list-about__title")= item.title
+                    div(class="list-about__body body-list-about")
+                        +card(`assets/img/about/${item.iconName}`, 'body-list-about')
+                        span(class="body-list-about__title")= item.title
         div(class="row about__middle middle-about")
-            div(class="col-6 info")
-                h2(class="heading info__heading") ABOUT US
-                span(class="tag info__tag") TECHNOLOGY
-                p(class="paragraph info__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
-                p(class="paragraph info__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
-                a(class="button info__more" href="#") LEARN MORE
+            div(class="col-6 middle-about__col")
+            div(class="col-6 middle-about__col")
+                +box('ABOUT US', 'TECHNOLOGY', 'box-middle-about')
+                    p(class="paragraph middle-about__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
+                    p(class="paragraph middle-about__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
+                    a(class="button button--more middle-about__more" href="#") LEARN MORE
         div(class="row about__bottom bottom-about")
             div(class="col-6 info")
-                h2(class="heading info__heading info__heading--alter") We work with big and small companies
-                p(class="paragraph info__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
-                p(class="paragraph info__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
+                +box('We work with big and small companies', '', 'box-bottom-about')
+                    p(class="paragraph bottom-about__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
+                    p(class="paragraph bottom-about__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
             div(class="col-6")
-                ul(class="list-reset graph")
-                    li(class="graph__item")
-                        div(class="graph__body body-graph")
-                            span(class="body-graph__title") APP DEVELOPMENT
-                            span(class="body-graph__percent") 92%
-                        div(class="graph__scale scale-graph")
-                            div(class="scale-graph__item")
-                    li(class="graph__item")
-                        div(class="graph__body body-graph")
-                            span(class="body-graph__title") User Interface
-                            span(class="body-graph__percent") 88%
-                        div(class="graph__scale scale-graph")
-                            div(class="scale-graph__item")
-                    li(class="graph__item")
-                        div(class="graph__body body-graph")
-                            span(class="body-graph__title") User Experiences
-                            span(class="body-graph__percent") 95%
-                        div(class="graph__scale scale-graph")
-                            div(class="scale-graph__item")
-                    li(class="graph__item")
-                        div(class="graph__body body-graph")
-                            span(class="body-graph__title") Information Architecture
-                            span(class="body-graph__percent") 50%
-                        div(class="graph__scale scale-graph")
-                            div(class="scale-graph__item")
+                +graph(graphList, 'graph-bottom-about')

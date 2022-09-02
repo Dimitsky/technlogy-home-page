@@ -11,19 +11,23 @@
 
     &__bottom {
         padding-top: 165px;
-        padding-bottom: 189px;
+        padding-bottom: 192px;
     }
-
-    &__img {
-        height: 70px;
-    }
-
+    
     &__title {
         padding-left: 0;
     }
 }
 
-.title-header {
+.top-header {
+    &__img {
+        height: 70px;
+    }
+}
+
+.bottom-header {
+    padding-left: 0;
+    
     &__heading {
         color: #fff;
         font-size: 5em;
@@ -31,5 +35,10 @@
         &::before {
             content: none;
         }
+    }
+
+    &__tag {
+        font-size: 1.875em;
+        letter-spacing: unset;
     }
 }

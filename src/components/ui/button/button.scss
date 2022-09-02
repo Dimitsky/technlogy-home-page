@@ -1,0 +1,16 @@
+.button {
+    border: none;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 1em 2.55em;
+    background: #076CF0;
+    color: #fff;
+    font: 400 0.75em/1.2741 Abel, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+
+    &--more {
+        margin-top: 60px;
+    }
+}

@@ -1,0 +1,11 @@
+//- imgSrc - путь до иконки
+//- mod - вспомогательный класс (необязательно)
+
+mixin card(imgSrc, mod)
+    //- Классы по БЭМ
+    - let blockMod = mod ? ` ${mod}__card card-${mod}` : '';
+    - mod = mod ? ` card-${mod}` : '';
+    div(class="card" + blockMod)
+        img(class="card__img" + mod src=imgSrc alt="icon" aria-hidden="true")
+        if block
+            block
