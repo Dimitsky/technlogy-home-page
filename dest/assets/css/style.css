@@ -296,3 +296,30 @@ img {
 .box-bottom-about__heading {
   font-size: 2.5em;
 }
+
+.experiences {
+  background: no-repeat center/cover url("../img/experiences/bg.jpg") #090708;
+}
+.experiences__col {
+  padding-top: 154px;
+  padding-bottom: 151px;
+}
+
+.box-experiences {
+  padding-left: 0;
+}
+.box-experiences__heading {
+  margin-bottom: 31px;
+  color: #fff;
+  font-size: 5em;
+  line-height: 1.3125;
+}
+.box-experiences__heading::before {
+  content: none;
+}
+.box-experiences__tag {
+  color: #868686;
+  font-size: 1.875em;
+  letter-spacing: unset;
+  line-height: 0.7333;
+}

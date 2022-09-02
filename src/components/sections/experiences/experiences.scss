@@ -1,0 +1,30 @@
+.experiences {
+    background: no-repeat center / cover url('../img/experiences/bg.jpg') #090708;
+
+    &__col {
+        padding-top: 154px;
+        padding-bottom: 151px;
+    }
+}
+
+.box-experiences {
+    padding-left: 0;
+
+    &__heading {
+        margin-bottom: 31px;
+        color: #fff;
+        font-size: 5em;
+        line-height: 1.3125;
+
+        &::before {
+            content: none;
+        }
+    }
+    
+    &__tag {
+        color: #868686;
+        font-size: 1.875em;
+        letter-spacing: unset;
+        line-height: 0.7333;
+    }
+}
