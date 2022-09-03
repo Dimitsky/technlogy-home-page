@@ -1,0 +1,20 @@
+.products {
+    &__bg {
+        min-height: 530px;
+        max-width: 410px;
+        background: no-repeat center / cover url('../img/products/bg.webp');
+    }
+
+    &__row {
+        margin-bottom: 130px;
+    }
+
+    &__col:nth-child(2) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.box-products {
+    max-width: 401px;
+}

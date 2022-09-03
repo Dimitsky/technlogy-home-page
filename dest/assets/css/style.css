@@ -343,3 +343,20 @@ img {
 .box-unique {
   max-width: 401px;
 }
+
+.products__bg {
+  min-height: 530px;
+  max-width: 410px;
+  background: no-repeat center/cover url("../img/products/bg.webp");
+}
+.products__row {
+  margin-bottom: 130px;
+}
+.products__col:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.box-products {
+  max-width: 401px;
+}
