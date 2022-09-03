@@ -1,6 +1,10 @@
 .experiences {
     background: no-repeat center / cover url('../img/experiences/bg.jpg') #090708;
 
+    &__row {
+        margin-bottom: 130px;
+    }
+    
     &__col {
         padding-top: 154px;
         padding-bottom: 151px;

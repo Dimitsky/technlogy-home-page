@@ -1,0 +1,20 @@
+.unique {
+    &__row {
+        margin-bottom: 130px;
+    }
+
+    &__col:nth-child(1) {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bg {
+        min-height: 536px;
+        border-radius: 10px;
+        background: no-repeat center / cover url('../img/unique/bg.jpg');
+    }
+}
+
+.box-unique {
+    max-width: 401px;
+}

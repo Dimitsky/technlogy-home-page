@@ -300,6 +300,9 @@ img {
 .experiences {
   background: no-repeat center/cover url("../img/experiences/bg.jpg") #090708;
 }
+.experiences__row {
+  margin-bottom: 130px;
+}
 .experiences__col {
   padding-top: 154px;
   padding-bottom: 151px;
@@ -322,4 +325,21 @@ img {
   font-size: 1.875em;
   letter-spacing: unset;
   line-height: 0.7333;
+}
+
+.unique__row {
+  margin-bottom: 130px;
+}
+.unique__col:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.unique__bg {
+  min-height: 536px;
+  border-radius: 10px;
+  background: no-repeat center/cover url("../img/unique/bg.jpg");
+}
+
+.box-unique {
+  max-width: 401px;
 }
