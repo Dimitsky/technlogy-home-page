@@ -30,3 +30,28 @@
         letter-spacing: 2px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+
+        &__heading, 
+        &__tag {
+            text-align: center;
+        }
+
+        &__heading {
+            font-size: 2.5em;
+            &::before {
+                content: none;
+            }
+        }
+
+        &__tag {
+            display: block;
+        }
+    }
+}

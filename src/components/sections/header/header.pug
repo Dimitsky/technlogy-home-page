@@ -2,17 +2,17 @@ include ../../ui/box/box.pug
 
 header(class="header")
     div(class="container-fluid my-container header__container")
-        div(class="row header__top top-header")
-            div(class="col-1")
+        div(class="row header__row header__row--top header__top top-header")
+            div(class="col-12 col-sm-2 col-md-1 top-header__img-wrap")
                 img(class="top-header__img" alt="изображение логотипа" src="assets/img/logo.webp")
-            nav(class="col-6 nav nav--right top-header__nav nav-top-header")
+            nav(class="col-12 col-sm-10 col-md-10 col-xl-6 nav nav--right top-header__nav nav-top-header")
                 ul(class="list-reset nav__list list-nav nav-top-header__list")
                     each item in navList
                         li(class="list-nav__item nav-top-header__item")
                             a(class=`list-nav__link link nav-top-header__link ${item.active == true ? "link--active" : ""}` href=item.href)= item.innerHTML
         div(class="row header__bottom bottom-header")
-            div(class="col-6")
-                +box(
+            div(class="col-12 col-sm-8 col-xl-6")
+                +box_h1(
                     'INNOVATION THAT DRIVES EMOTION', 
                     'THE NEXT LEVEL',
                     'bottom-header'

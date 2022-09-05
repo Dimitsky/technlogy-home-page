@@ -18,3 +18,15 @@
 .box-unique {
     max-width: 401px;
 }
+
+@media screen and (max-width: 767px) {
+    .unique {
+        &__row {
+            margin-bottom: 50px;
+        }
+
+        &__bg {
+            display: none;
+        }
+    }
+}

@@ -1,14 +1,4 @@
 .clients {
-    &__row {
-        &--top {
-            --bs-gutter-x: 6.0625rem;
-        }
-
-        &--bottom {
-            --bs-gutter-x: 5rem;
-        }
-    }
-    
     &__top {
         margin-bottom: 72px;
     }
@@ -46,17 +36,38 @@
 }
 
 .card-bottom-clients {
+    height: 100%;
     padding: 50px 54px 37px;
 
     &__heading {
         margin-top: 30px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
         font: 400 1.5625em/1.6 Abel, sans-serif;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
 
     &__paragraph:first-of-type {
-        margin-top: 10px;
+        margin-top: auto;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .clients {
+        &__row {
+            &--top{
+                --bs-gutter-y: 3.125em;
+                margin-bottom: 0;
+            }
+
+            &--bottom {
+                --bs-gutter-y: 3.125em;
+                margin-bottom: 50px;
+            }
+        }
+
+        &__bottom {
+            transform: none;
+        }
+    }    
 }

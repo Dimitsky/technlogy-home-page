@@ -32,3 +32,22 @@
         line-height: 0.7333;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .experiences {
+        &__row {
+            margin-bottom: 50px;
+        }
+
+        &__col {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    .box-experiences {
+        &__heading {
+            font-size: 2.5em;
+        }
+    }
+}

@@ -1,8 +1,6 @@
 .about {
     &__list {
-        position: relative;
-        top: -83px;
-        justify-content: space-between;
+        transform: translateY(-83px);
     }
 
     &__middle {
@@ -17,22 +15,20 @@
 
 .list-about {
     &__item {
-        max-width: 270px;
-
         &:nth-child(1) .card {
-            box-shadow: 0 10px 60px 5px #4091fb;
+            box-shadow: 0 0 60px 0 #4091fb;
         }
 
         &:nth-child(2) .card {
-            box-shadow: 0 10px 60px 5px #7FE7C6;
+            box-shadow: 0 0 60px 0 #7FE7C6;
         }
 
         &:nth-child(3) .card {
-            box-shadow: 0 10px 60px 5px #DF8CC4;
+            box-shadow: 0 0 60px 0 #DF8CC4;
         }
 
         &:nth-child(4) .card {
-            box-shadow: 0 10px 60px 5px #F4A382;
+            box-shadow: 0 0 60px 0 #F4A382;
         }
     }
 
@@ -52,15 +48,17 @@
 }
 
 .middle-about {
-    &__col:nth-child(1) {
-        min-height: 528px;
-        background: no-repeat center / auto 100% url('../img/about/bg.webp');
-    }
+    &__col {
+        &--bg {
+            min-height: 528px;
+            background: no-repeat center / auto 100% url('../img/about/bg.webp');
+        }
 
-    &__col:nth-child(2) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        &--content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     &__paragraph:nth-of-type(1) {
@@ -88,5 +86,55 @@
 
     &__heading {
         font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .about {
+        &__list {
+            --bs-gutter-y: 3.125em;
+            transform: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        &__row {
+            &--list {
+                --bs-gutter-y: 3.125em;
+            }
+        }
+
+        &__middle, 
+        &__bottom {
+            --bs-gutter-y: 3.125em;
+        }
+
+        &__middle {
+            margin-bottom: 50px;
+            padding-top: 0;
+        }
+
+        &__bottom{
+            padding-bottom: 50px;
+        }
+
+        &__list {
+            margin-bottom: 50px;
+        }
+    }
+
+    .middle-about {
+        &__col {
+            &--bg {
+                display: none;
+            }
+        }
+    }
+
+    .box-bottom-about {
+        max-width: unset;
+        padding-left: 0;
     }
 }

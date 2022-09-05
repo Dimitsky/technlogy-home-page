@@ -6,7 +6,7 @@
 
     &__item {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 4fr 1fr;
         grid-template-areas: 
             'title percent'
             'scale scale';
@@ -42,5 +42,14 @@
 
     &__scale {
         height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .graph {
+        &__title, 
+        &__percent {
+            font-size: 1em;
+        }
     }
 }

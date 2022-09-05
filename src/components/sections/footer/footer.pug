@@ -3,41 +3,41 @@ include ../../ui/box/box.pug
 footer(class="footer")
     div(class="container-fluid my-container footer__container")
         div(Class="row footer__top top-footer")
-            div(class="col-4")
+            div(class="col-12 col-md-6 col-xl-4")
                 +box('SUPPORT', 'get in touch', 'box-top-footer')
         form(class="row footer__middle middle-footer")
-            div(class="col-4 middle-footer__col")
+            div(class="col-12 col-sm-4 middle-footer__col")
                 input(class="input middle-footer__input middle-footer__name" name="user-name" id="user-name" type="text" placeholder="Name" aria-label="User name")
-            div(class="col-4 middle-footer__col")
+            div(class="col-12 col-sm-4 middle-footer__col")
                 input(class="input middle-footer__input middle-footer__email" name="user-email" id="user-email" type="email" placeholder="Email" aria-label="User email")
-            div(class="col-4 middle-footer__col")
+            div(class="col-12 col-sm-4 middle-footer__col")
                 input(class="input middle-footer__input middle-footer__phone" name="user-phone" id="user-phone" type="tel" placeholder="Phone" aria-label="User phone")
             div(class="col-12 middle-footer__col")
                 textarea(class="input middle-footer__input middle-footer__message" name="user-message" id="user-message" placeholder="Message" aria-label="User message" rows="1")
             div(class="col-12 middle-footer__col")
                 button(class="button button--send middle-footer__send" type="submit") SEND
         div(class="row footer__bottom bottom-footer")
-            div(class="col-4 bottom-footer__col")
+            div(class="col-12 col-sm-4 bottom-footer__col")
                 div(class="bottom-footer__img-wrap")
                     img(class="bottom-footer__img" src="assets/img/footer/i1.webp" alt="Иконка")
                 div(class="bottom-footer__group")
                     a(class="bottom-footer__contact bottom-footer__contact--phone" href="tel:1-677-124-44225") 1-677-124-44225
                     a(class="bottom-footer__contact bottom-footer__contact--phone" href="tel:1-677-124-44225") 1-677-124-44225
                     a(class="bottom-footer__contact bottom-footer__contact--phone" href="tel:1-677-124-44225") 1-677-124-44225
-            div(class="col-4 bottom-footer__col")
+            div(class="col-12 col-sm-4 bottom-footer__col")
                 div(class="bottom-footer__img-wrap")
                     img(class="bottom-footer__img" src="assets/img/footer/i2.webp" alt="Иконка")
                 div(class="bottom-footer__group")
                     a(class="bottom-footer__contact bottom-footer__contact--email" href="mailto:office@bridge.com") office@bridge.com
                     a(class="bottom-footer__contact bottom-footer__contact--email" href="mailto:service@bridge.com") service@bridge.com
                     a(class="bottom-footer__contact bottom-footer__contact--email" href="mailto:shop@bridge.com") shop@bridge.com
-            div(class="col-4 bottom-footer__col")
+            div(class="col-12 col-sm-4 bottom-footer__col")
                 div(class="bottom-footer__img-wrap")
                     img(class="bottom-footer__img" src="assets/img/footer/i3.webp" alt="Иконка")
                 address(class="bottom-footer__group")
                     span(class="bottom-footer__contact bottom-footer__contact--address") New York<br>Bridgestone side 130<br>NY
         div(class="row")
-            nav(class="col-7 nav footer__nav nav-footer")
+            nav(class="col-12 col-xl-7 nav footer__nav nav-footer")
                 ul(class="list-reset nav__list list-nav nav-footer__list")
                     each item in navList
                         li(class="list-nav__item nav-footer__item")

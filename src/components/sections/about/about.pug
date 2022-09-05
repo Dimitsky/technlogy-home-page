@@ -4,23 +4,23 @@ include ../../ui/graph/graph.pug
 
 section(class="about")
     div(class="container-fluid my-container about__container")
-        ul(class="list-reset row about__wrap about__list list-about")
+        ul(class="list-reset row about__row about__row--list about__wrap about__list list-about")
             each item in aboutList
-                li(class="col-3 list-about__item")
+                li(class="col-12 col-sm-6 col-md-3 list-about__item")
                     div(class="list-about__body body-list-about")
                         +card(`assets/img/about/${item.iconName}`, 'body-list-about')
                         span(class="body-list-about__title")= item.title
         div(class="row about__middle middle-about")
-            div(class="col-6 middle-about__col")
-            div(class="col-6 middle-about__col")
+            div(class="col-12 col-sm-6 middle-about__col middle-about__col--bg")
+            div(class="col-12 col-sm-6 middle-about__col middle-about__col--content")
                 +box('ABOUT US', 'TECHNOLOGY', 'box-middle-about')
                     p(class="paragraph middle-about__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
                     p(class="paragraph middle-about__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
                     a(class="button button--more middle-about__more" href="#") LEARN MORE
         div(class="row about__bottom bottom-about")
-            div(class="col-6 info")
+            div(class="col-12 col-sm-6 info")
                 +box('We work with big and small companies', '', 'box-bottom-about')
                     p(class="paragraph bottom-about__paragraph") Nulla placerat mi vitae mauris varius consequat. Aliquam libero ante, consectetur at turpis sit amet, congue Suspendisse porta bibendum scelerisque.
                     p(class="paragraph bottom-about__paragraph") Suspendisse porta bibendum scelerisque. Nulla placerat
-            div(class="col-6")
+            div(class="col-12 col-sm-6")
                 +graph(graphList, 'graph-bottom-about')

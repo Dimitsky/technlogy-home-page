@@ -26,3 +26,21 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .nav {
+        justify-content: center;
+        
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.25em;
+        }
+    }
+
+    .list-nav {
+        &__link {
+            font-size: 2em;
+        }
+    }
+}

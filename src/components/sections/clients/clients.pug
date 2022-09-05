@@ -5,11 +5,11 @@ section(class="clients")
     div(class="container-fluid my-container clients__container")
         ul(class="row list-reset clients__row clients__row--top clients__top top-clients")
             each item in clientsList
-                li(class="col-3 top-clients__col top-clients__item")
+                li(class="col-12 col-sm-3 top-clients__col top-clients__item")
                     img(class="top-clients__img" src=`assets/img/clients/${item.src}` alt=item.alt)
         ul(class="row list-reset clients__row clients__row--bottom clients__bottom bottom-clients")
             each item in infoList
-                li(class="col-4 bottom-clients__col bottom-clients__item")
+                li(class="col-12 col-sm-4 bottom-clients__col bottom-clients__item")
                     +card(`assets/img/clients/${item.src}`, 'card-bottom-clients')
-                        h4(class="card-bottom-clients__heading")= item.heading
+                        h3(class="card-bottom-clients__heading")= item.heading
                         p(class="paragraph paragraph--compact card-bottom-clients__paragraph")= item.paragraph

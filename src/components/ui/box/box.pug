@@ -10,3 +10,16 @@ mixin box(heading, tag, mod)
             span(class="box__tag" + tagMod)= tag
         if block
             block
+
+mixin box_h1(heading, tag, mod)
+    - let boxMod = ''; headingMod = '', tagMod = '';
+    if mod
+        - boxMod = ' ' + mod;
+        - headingMod = ' ' + mod + '__heading';
+        - tagMod = ' ' + mod + '__tag';
+    div(class="box" + boxMod)
+        h1(class="box__heading" + headingMod)= heading
+        if tag
+            span(class="box__tag" + tagMod)= tag
+        if block
+            block

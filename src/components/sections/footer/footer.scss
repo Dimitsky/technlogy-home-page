@@ -1,5 +1,9 @@
 .footer {
     background-color: #000;
+
+    &__container {
+        padding-bottom: 16px;
+    }
     
     &__top {
         margin-bottom: 46px;
@@ -7,7 +11,6 @@
     }
 
     &__middle {
-        --bs-gutter-x: 5.625rem;
         --bs-gutter-y: 1.6875rem;
         margin-bottom: 100px;
     }
@@ -36,7 +39,7 @@
 .bottom-footer {
     &__col {
         display: flex;
-        gap: 30px;
+        gap: 1.875em;
     }
 
     &__img {
@@ -53,11 +56,44 @@
     &__contact {
         color: #fff;
         font: 400 1em/1.4 Rubik, sans-serif;
+        text-decoration: none;
     }
 }
 
 .nav-footer {
     &__list {
-        gap: 70px;
+        gap: 4.375em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        &__top {
+            margin-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        &__middle {
+            margin-bottom: 50px;
+        }
+
+        &__bottom {
+            --bs-gutter-y: 3.125em;
+            margin-bottom: 50px;
+        }
+    }
+
+    .middle-footer {
+        &__col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .nav-footer {
+        &__list {
+            gap: 3.125em;
+        }
     }
 }

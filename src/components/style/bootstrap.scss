@@ -1,3 +1,9 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 1024px, 
+  xl: 1200px,
+) !default;
 $grid-gutter-width: 1.25rem;
 
 @import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
