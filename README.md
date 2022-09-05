@@ -1,4 +1,4 @@
-# Technlogy home page (В РАЗРАБОТКЕ)
+# Technlogy home page
 
 Лендинг веб-страницы (сетка bootstrap 5)
 
