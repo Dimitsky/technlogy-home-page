@@ -1,15 +1,15 @@
+include ../../ui/box/box.pug
+include ../../ui/card/card.pug
+
 section(class="clients")
-    div(class="container-fluid clients__container")
-        div(class="row")
-            ul(class="col-12 clients__list list-clients")
-                each item in clientsList
-                    li(class="list-clients__item")
-                        img(class="list-clients__img" src=`assets/img/clients/${item.src}` alt=item.alt)
-        div(class="row")
-            ul(class="list-reset col-12 info__list list-info")
-                each item in infoList
-                    li(class="list-info__item")
-                        div(class="list-info__body body-list-info")
-                            img(class="body-list-info__img" src=`assets/img/clients/${item.src}`, alt=item.alt)
-                            h4(class="body-list-info__heading")= item.heading
-                            p(class="paragraph paragraph--compact")= item.paragraph
+    div(class="container-fluid my-container clients__container")
+        ul(class="row list-reset clients__row clients__row--top clients__top top-clients")
+            each item in clientsList
+                li(class="col-3 top-clients__col top-clients__item")
+                    img(class="top-clients__img" src=`assets/img/clients/${item.src}` alt=item.alt)
+        ul(class="row list-reset clients__row clients__row--bottom clients__bottom bottom-clients")
+            each item in infoList
+                li(class="col-4 bottom-clients__col bottom-clients__item")
+                    +card(`assets/img/clients/${item.src}`, 'card-bottom-clients')
+                        h4(class="card-bottom-clients__heading")= item.heading
+                        p(class="paragraph paragraph--compact card-bottom-clients__paragraph")= item.paragraph
