@@ -1,0 +1,13 @@
+.input {
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    padding: 0.25em 1em;
+    color: #fff;
+    font: 400 1em/1.185 Rubik, sans-serif;
+    background: none;
+
+    &::placeholder {
+        color: gray;
+    }
+}
